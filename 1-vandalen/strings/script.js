@@ -12,13 +12,13 @@ window.onload = function(){
 		var i;
 		
 		if (str.length === 0){
-                try {
-                    throw new Error('Hallå där! Du måste skriva något!');
-                }
-                catch (e){
-                    return(e.message);
-                }
+            try {
+                throw new Error('Hallå där! Du måste skriva något!');
             }
+            catch (e){
+                return(e.message);
+            }
+        }
         
         for (i = 0; i <= str.length; i++){
             character = str.charAt(i);

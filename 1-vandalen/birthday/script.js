@@ -5,11 +5,41 @@ window.onload = function(){
 	
 	var birthday = function(date){
 		
+		
 
 
 			// Din kod här.
-
-
+		    var answer = new Array();
+			var today = new Date();
+            var birthday = new Date(date);
+            var rgx = /(\d{4})-(\d{2})-(\d{2})/;
+            var timeinmilisec = birthday.getTime() - today.getTime();
+            
+            if (!date.match(rgx)){
+                try {
+                    throw new Error("Fel! Datumet ska vara i formatet åååå-mm-dd!");
+                }
+                catch (e){
+                    return (e.message);
+                }
+	        }
+            
+            
+            if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 0){
+                answer = 0;
+            }
+            else if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 1){
+                answer = 1;
+            }
+            else {
+                answer = ( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) );
+            }
+            if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) < 0){
+                timeinmilisec = (birthday.getTime(birthday.setYear(2014))) - today.getTime();
+                answer = Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24));
+            }
+            
+            return answer;
 
 
 	};
