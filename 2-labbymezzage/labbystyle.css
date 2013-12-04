@@ -1,5 +1,5 @@
 body {
-	background: url("pics/bg.png");
+	background: url("pics/labbyGB.jpg");
 	color: #444;
 	font-family: "Latha", "Georgia", "Helvetica",  sans-serif;
 }
@@ -9,29 +9,29 @@ p {
 }
 
 ::-webkit-input-placeholder {
-    color:    #000;
+    color:    #FFFFFF;
 }
 :-moz-placeholder {
-    color:    #000;
+    color:    #FFFFFF;
 }
 
 .content {
-	background-color: #90BCEF;
-	border: 2px solid #90BCEF;
+	background-color: #612602;
+	border: 2px solid #612602;
 	border-radius: 20px;
 	width: 700px;
 	padding: 0 30px;
 	text-align: center;
 	margin: 4em auto;
-	opacity: 0.8;
-	box-shadow: 0 0 3em #687764;
+	opacity: 0.9;
+	box-shadow: 0 0 3em #000000;
 }
 
 header h1 {
 	font-family: 'Bowlby One', "Lucida Grande", sans-serif;
 	text-align: center;
 	font-size: 4em;
-    color: #A64712;
+    color: #000000;
     letter-spacing: 1.3px;
 }
 
@@ -60,6 +60,7 @@ footer p {
 	float: right;
 	margin-right: 20px;
 	font-size: 1em;
+	color: #FFFFFF;
 }
 
 .MessageBoard .message{
@@ -73,7 +74,7 @@ footer p {
 	border-radius: 10px;
 	box-shadow: 0 0 0.5em #4e594b;
 	padding: 5px;
-	color: #687764;
+	color: #FFFFFF;
 	margin-top: 20px;
 }
 
