@@ -17,32 +17,34 @@ window.onload = function(){
 		
 		
 		var answer = new Array();
-		
-		if(number < secret){
-		    numberOfGuesses++;
-		    answer[0] = false;
-		    answer[1] = "Det hemliga talet är högre!";
-		    return answer;
-		}
-		else if(number > secret){
-		    numberOfGuesses++;
-		    answer[0] = false;
-		    answer[1] = "Det hemliga talet är lägre!";
-		    return answer;
-		}
-		else if(number == secret){
-		    numberOfGuesses++;
-		    answer[0] = true;
-		    answer[1] = "Grattis du vann! Det hemliga talet var " +secret+ " och du behövde " +numberOfGuesses+ " gissningar för att hitta det!";
-		    return answer;
-		}
-		else if(number < 0 || number > 100){
-		    numberOfGuesses++;
+		if(number < 0 || number > 100){
+		    
 		    answer[0] = false;
 		    answer[1] = "Talet är utanför intervallet 0 - 100!";
 		    return answer;
-		}
+		}else{
+		    
 		
+    		if(number < secret){
+    		    numberOfGuesses++;
+    		    answer[0] = false;
+    		    answer[1] = "Det hemliga talet är högre!";
+    		    return answer;
+    		}
+    		else if(number > secret){
+    		    numberOfGuesses++;
+    		    answer[0] = false;
+    		    answer[1] = "Det hemliga talet är lägre!";
+    		    return answer;
+    		}
+    		else if(number == secret){
+    		    numberOfGuesses++;
+    		    answer[0] = true;
+    		    answer[1] = "Grattis du vann! Det hemliga talet var " +secret+ " och du behövde " +numberOfGuesses+ " gissningar för att hitta det!";
+    		    return answer;
+    		}
+    		
+		}
 		
 		
 	    

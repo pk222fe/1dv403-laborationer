@@ -1,0 +1,140 @@
+body {
+	background: url("pics/bg.png");
+	color: #444;
+	font-family: "Latha", "Georgia", "Helvetica",  sans-serif;
+}
+
+p {
+	font-family: 'Prociono', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color:    #000;
+}
+:-moz-placeholder {
+    color:    #000;
+}
+
+.content {
+	background-color: #90BCEF;
+	border: 2px solid #90BCEF;
+	border-radius: 20px;
+	width: 700px;
+	padding: 0 30px;
+	text-align: center;
+	margin: 4em auto;
+	opacity: 0.8;
+	box-shadow: 0 0 3em #687764;
+}
+
+header h1 {
+	font-family: 'Bowlby One', "Lucida Grande", sans-serif;
+	text-align: center;
+	font-size: 4em;
+    color: #A64712;
+    letter-spacing: 1.3px;
+}
+
+footer {
+	display: block;
+	clear: both;
+}
+
+footer p {
+	text-align: center;
+	font-size: 1em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e594b), to(#687764));
+   -webkit-background-clip: text;
+   letter-spacing: 1.3px;
+   -webkit-text-fill-color: transparent;
+}
+
+.MessageBoard {
+	width: 500px;
+	padding: 10px;
+	margin: 0px auto;
+	display: block;
+}
+
+.MessageBoard .antalMeddelanden{
+	float: right;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+.MessageBoard .message{
+	text-align: left;
+	min-width: 485px;
+	max-width: 485px;
+	min-height: 60px;
+	overflow: hidden;
+	display: block;
+	background: none;
+	border-radius: 10px;
+	box-shadow: 0 0 0.5em #4e594b;
+	padding: 5px;
+	color: #687764;
+	margin-top: 20px;
+}
+
+.MessageBoard .message .theTexting {
+	margin: 5px;
+	width: 410px;
+	float: left;
+	border-right: 1px solid #000;
+}
+
+.MessageBoard .message .messageDate{
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 425px;
+}
+
+img {
+    margin-right: 5px;
+}
+
+textarea{
+	min-width: 485px;
+	max-width: 485px;
+	min-height: 200px;
+	display: block;
+	background: none;
+	border-radius: 10px;
+	box-shadow: 0 0 1em #4e594b;
+	padding: 5px;
+	color: #000;
+	font: 14px 'Helvetica', sans-serif;
+}
+
+button {
+	border-radius: 10px;
+	font-family: 'Jockey One', 'Bowlby One', sans-serif;
+	font-size: 1.3em;
+	padding: 10px;
+	margin: 10px 20px;
+	display: block;
+	float: right;
+	background: -webkit-gradient(linear, left top, left bottom, from(#687764), to(#4e594b));
+	border: 3px outset #687764;
+	color: #e8f7e4;
+}
+
+button:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#4e594b), to(#687764));
+}
+
+button:active {
+	border: 3px inset #687764;
+}
+
+.right 
+{
+    float: right;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

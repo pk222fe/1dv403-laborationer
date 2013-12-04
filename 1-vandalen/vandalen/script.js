@@ -17,14 +17,15 @@ var makePerson = function(persArr){
         if (tmp < maxAge && tmp > minAge) avg = tmp;
     }
     
-    
     averageAge = Math.ceil((avg + maxAge + minAge)/persArr.length);
     
     for (var j = persArr.length-1; j >= 0; j--) {
         namesArr[j] = persArr[j].name;
+        
     }
     
-    namesArr.sort();
+    
+    namesArr.sort(function(a, b){ return a.localeCompare(b)});
     names = namesArr.join(", ");
     
     
@@ -40,9 +41,3 @@ var makePerson = function(persArr){
     
     return result;
 };
-
-var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
-
-var result = makePerson(data);
-
-console.log(result);

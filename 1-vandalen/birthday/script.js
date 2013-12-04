@@ -9,37 +9,39 @@ window.onload = function(){
 
 
 			// Din kod här.
-		    var answer = new Array();
+		    var answer;
 			var today = new Date();
             var birthday = new Date(date);
             var rgx = /(\d{4})-(\d{2})-(\d{2})/;
             var timeinmilisec = birthday.getTime() - today.getTime();
             
             if (!date.match(rgx)){
-                try {
-                    throw new Error("Fel! Datumet ska vara i formatet åååå-mm-dd!");
-                }
-                catch (e){
-                    return (e.message);
-                }
+                
+                
+                throw new Error("Fel! Datumet ska vara i formatet åååå-mm-dd!");
+                
+     
 	        }
-            
-            
-            if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 0){
-                answer = 0;
-            }
-            else if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 1){
-                answer = 1;
-            }
-            else {
-                answer = ( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) );
-            }
             if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) < 0){
                 timeinmilisec = (birthday.getTime(birthday.setYear(2014))) - today.getTime();
                 answer = Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24));
+                return answer;
             }
             
-            return answer;
+            if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 0){
+                answer = 0;
+                return answer;
+            }
+            else if (( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ) === 1){
+                answer = 1;
+                return answer;
+            }
+            else {
+                answer = ( Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) );
+                return answer;
+            }
+            
+            
 
 
 	};
@@ -60,6 +62,7 @@ window.onload = function(){
 		try {
 			var answer = birthday(input.value) // Läser in texten från textrutan och skickar till funktionen "convertString"
 			var message;
+		
 			switch (answer){
 				case 0: message = "Grattis på födelsedagen!";
 					break;
