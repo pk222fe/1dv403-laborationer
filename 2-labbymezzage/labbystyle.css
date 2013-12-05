@@ -1,3 +1,5 @@
+
+
 body {
 	background: url("pics/labbyGB.jpg");
 	color: #444;
@@ -28,7 +30,7 @@ p {
 }
 
 header h1 {
-	font-family: 'Bowlby One', "Lucida Grande", sans-serif;
+	font-family: 'Spicy Rice', cursive;
 	text-align: center;
 	font-size: 4em;
     color: #000000;
@@ -59,7 +61,7 @@ footer p {
 .MessageBoard .antalMeddelanden{
 	float: right;
 	margin-right: 20px;
-	font-size: 1em;
+	font-size: 12px;
 	color: #FFFFFF;
 }
 
@@ -70,7 +72,7 @@ footer p {
 	min-height: 60px;
 	overflow: hidden;
 	display: block;
-	background: none;
+	background: #E87C25;
 	border-radius: 10px;
 	box-shadow: 0 0 0.5em #4e594b;
 	padding: 5px;
@@ -110,21 +112,25 @@ textarea{
 	font: 14px 'Helvetica', sans-serif;
 }
 
+textarea:focus {
+    background: #E87C25;
+}
+
 button {
+    font-family: 'Spicy Rice', cursive;
 	border-radius: 10px;
-	font-family: 'Jockey One', 'Bowlby One', sans-serif;
 	font-size: 1.3em;
 	padding: 10px;
 	margin: 10px 20px;
 	display: block;
 	float: right;
-	background: -webkit-gradient(linear, left top, left bottom, from(#687764), to(#4e594b));
-	border: 3px outset #687764;
+	background: #612602;
+	border: 3px outset #853B00;
 	color: #e8f7e4;
 }
 
 button:hover {
-	background: -webkit-gradient(linear, left top, left bottom, from(#4e594b), to(#687764));
+	background: #E87C25;
 }
 
 button:active {

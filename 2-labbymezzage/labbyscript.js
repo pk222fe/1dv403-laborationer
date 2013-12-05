@@ -2,16 +2,16 @@
 
 function dateFormat(dateToFix) {
 	var hour = dateToFix.getHours();
-	// Fixar formateringen ifall timmen är mindre än 10.
+	// Formatering ifall timmen är mindre än 10.
 	if (hour < 10){
 		hour = "0"+hour;
 	}
-
+    // Formatering ifall minuten är mindre än 10.
     var minute = dateToFix.getMinutes();
 	if (minute < 10){
 		minute = "0"+minute;
 	}
-	
+	// Formatering ifall sekunder är mindre än 10.
 	var second = dateToFix.getSeconds();
 	if (second < 10){
 		second = "0"+second;
@@ -141,7 +141,7 @@ function MessageBoard() {
     };
 
     var buttonSubmitMessage = document.createElement("button");
-    var buttonText = document.createTextNode("Klottra");
+    var buttonText = document.createTextNode("Skriv");
     divMessageBoard.appendChild(buttonSubmitMessage);
     buttonSubmitMessage.appendChild(buttonText);
     buttonSubmitMessage.onclick = function () {
