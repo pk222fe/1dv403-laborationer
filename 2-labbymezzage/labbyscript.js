@@ -232,6 +232,7 @@ function MessageBoard() {
             return false;
         }
     };
+    
 
     
 
